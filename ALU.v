@@ -50,9 +50,9 @@ localparam MOV = 4'b0111;
 		  INC:
 			ALUResult = A + 1;
 		  MUL:
-			ALUResult = (A*B);
+			ALUResult = (A*B) + 1;
 		  MOV:
-		   ALUResult =
+		   ALUResult = B;
 		default:
 			ALUResult= 0;
 		endcase // case(control)
